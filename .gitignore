@@ -1,0 +1,33 @@
+# --- Archivos del Sistema y Editores ---
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db
+*.suo
+*.sln
+*.sw?
+
+# --- Dependencias (No se suben, se instalan con npm install) ---
+node_modules/
+
+# --- Archivos de Configuración y Secretos ---
+.env
+.env.local
+.env.production
+.env.development
+*.local
+
+# --- Salida de Construcción ---
+dist/
+dist-ssr/
+*.tsbuildinfo
+
+# --- Logs y Debugging ---
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# --- IMPORTANT: Asegurarse de incluir las imágenes ---
+!src/assets/pictures/*

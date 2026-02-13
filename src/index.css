@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  @apply bg-background text-text;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Leaflet map styles */
+.leaflet-container {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Custom marker styles */
+.custom-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* Custom popup styles */
+.leaflet-popup-content-wrapper {
+  border-radius: 16px !important;
+  padding: 0 !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+}
+
+.leaflet-popup-tip {
+  display: none !important;
+}
+
+/* Safe area for iOS */
+.safe-area-inset-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
